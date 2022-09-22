@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/JordiKim/simplesp/static/css/main.917d9290.css",
+    "main.js": "/JordiKim/simplesp/static/js/main.12bec537.js",
+    "static/media/blog_logo.jpg": "/JordiKim/simplesp/static/media/blog_logo.2de9331a9c02d6e71f7b.jpg",
+    "index.html": "/JordiKim/simplesp/index.html",
+    "main.917d9290.css.map": "/JordiKim/simplesp/static/css/main.917d9290.css.map",
+    "main.12bec537.js.map": "/JordiKim/simplesp/static/js/main.12bec537.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.917d9290.css",
+    "static/js/main.12bec537.js"
+  ]
+}
