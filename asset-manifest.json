@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/simplesp/static/css/main.917d9290.css",
-    "main.js": "/simplesp/static/js/main.e8e09aee.js",
+    "main.js": "/simplesp/static/js/main.36e5f7b4.js",
     "static/media/blog_logo.jpg": "/simplesp/static/media/blog_logo.2de9331a9c02d6e71f7b.jpg",
     "index.html": "/simplesp/index.html",
     "main.917d9290.css.map": "/simplesp/static/css/main.917d9290.css.map",
-    "main.e8e09aee.js.map": "/simplesp/static/js/main.e8e09aee.js.map"
+    "main.36e5f7b4.js.map": "/simplesp/static/js/main.36e5f7b4.js.map"
   },
   "entrypoints": [
     "static/css/main.917d9290.css",
-    "static/js/main.e8e09aee.js"
+    "static/js/main.36e5f7b4.js"
   ]
 }
