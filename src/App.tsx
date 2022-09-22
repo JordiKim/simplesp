@@ -1,7 +1,7 @@
 import React from "react";
 import { HomePage, SignInPage } from "./pages";
 import { Airplane, Boat } from "./components";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 
 const NotFound: React.FC = () => {
   return (
@@ -14,7 +14,7 @@ const NotFound: React.FC = () => {
 function App() {
   return (
     <>
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/signin" element={<SignInPage />} />
@@ -22,7 +22,16 @@ function App() {
           <Route path="/boat" element={<Boat />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
+      <HashRouter>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/signin" element={<SignInPage />} />
+          <Route path="/airplane" element={<Airplane />} />
+          <Route path="/boat" element={<Boat />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </HashRouter>
     </>
   );
 }
