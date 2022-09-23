@@ -1,8 +1,10 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { BlogListSlice } from "./BlogList/slice";
+import { todoSlice } from "./Todolist/slice";
 
 const rootReducer = combineReducers({
   blogList: BlogListSlice.reducer,
+  todo: todoSlice.reducer,
 });
 
 const store = configureStore({

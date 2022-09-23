@@ -14,6 +14,9 @@ export const HomePage: React.FC = () => {
         <Link to={"/boat"} className=" w-[150px] bg-blue-500">
           boat
         </Link>
+        <Link to={"/todolist"} className=" w-[150px] bg-blue-500">
+          todolist
+        </Link>
       </div>
     </MainLayout>
   );

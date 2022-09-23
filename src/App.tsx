@@ -1,5 +1,5 @@
 import React from "react";
-import { HomePage, SignInPage } from "./pages";
+import { HomePage, SignInPage, TodolistPage } from "./pages";
 import { Airplane, Boat } from "./components";
 import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 
@@ -29,6 +29,7 @@ function App() {
           <Route path="/signin" element={<SignInPage />} />
           <Route path="/airplane" element={<Airplane />} />
           <Route path="/boat" element={<Boat />} />
+          <Route path="/todolist" element={<TodolistPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </HashRouter>
