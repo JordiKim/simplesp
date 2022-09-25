@@ -14,7 +14,7 @@ export const Header: React.FC = () => {
         <div className="flex flex-col justify-center ml-auto">
           <nav className="flex gap-2">
             <Link to={"/"}>
-              <div>Home P</div>
+              <div>Home</div>
             </Link>
             <Link to={"/allreact"}>
               <div>All React</div>
