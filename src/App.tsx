@@ -14,26 +14,6 @@ const NotFound: React.FC = () => {
 function App() {
   return (
     <>
-      {/* <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/signin" element={<SignInPage />} />
-          <Route path="/airplane" element={<Airplane />} />
-          <Route path="/boat" element={<Boat />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter> */}
-      {/* <HashRouter>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/allreact" element={<AllReactPage />} />
-          <Route path="/signin" element={<SignInPage />} />
-          <Route path="/airplane" element={<Airplane />} />
-          <Route path="/boat" element={<Boat />} />
-          <Route path="/todolist" element={<TodolistPage />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </HashRouter> */}
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
