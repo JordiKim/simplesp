@@ -21,4 +21,21 @@ code {
   .box {
     @apply bg-gray-500 focus:ring-4 group-hover:text-gray-600 font-bold flex justify-center items-center rounded-md cursor-pointer outline-none w-20 h-20 text-3xl text-white;
   }
+
+  // 限制顯示單行
+  .maple-ellipsis1 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  // 限制顯示${}行
+  .maple-ellipsis2 {
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2; /*行數*/
+    -webkit-box-orient: vertical;
+    white-space: normal;
+  }
 }

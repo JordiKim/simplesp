@@ -1,5 +1,5 @@
 import React from "react";
-import { HomePage, SignInPage, TodolistPage, AllReactPage } from "./pages";
+import { HomePage, SignInPage, TodolistPage, AllReactPage, NewsPage } from "./pages";
 import { Airplane, Boat } from "./components";
 import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 
@@ -22,6 +22,7 @@ function App() {
           <Route path="/airplane" element={<Airplane />} />
           <Route path="/boat" element={<Boat />} />
           <Route path="/todolist" element={<TodolistPage />} />
+          <Route path="/news" element={<NewsPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

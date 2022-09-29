@@ -1,10 +1,12 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { BlogListSlice } from "./BlogList/slice";
 import { todoSlice } from "./Todolist/slice";
+import { NewsSlice } from "./News/slice";
 
 const rootReducer = combineReducers({
   blogList: BlogListSlice.reducer,
   todo: todoSlice.reducer,
+  news: NewsSlice.reducer,
 });
 
 const store = configureStore({

@@ -31,7 +31,7 @@ export const TaskItem: React.FC = (props) => {
           </div>
         );
       })}
-      <button onClick={() => dispatch(todoSlice.actions.sort())}>Sort</button>
+      {/* <button onClick={() => dispatch(todoSlice.actions.sort())}>Sort</button> */}
     </>
   );
 };

@@ -7,7 +7,7 @@ interface PropsType {
 
 export const MainLayout: React.FC<PropsType> = ({ children }) => {
   return (
-    <div className=" my-0 mx-auto w-[860px]">
+    <div className="my-0 mx-auto w-[860px]">
       <Header />
       <div className="min-h-[70vh]">{children}</div>
       <Footer />
