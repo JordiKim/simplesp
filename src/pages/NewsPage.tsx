@@ -23,7 +23,7 @@ export const NewsPage: React.FC = () => {
                 <img src={item.urlToImage} alt="Shoes" className="bg-contain bg-center h-[270px]" />
               </figure>
               <div className="daisy-card-body">
-                <h2 className="daisy-card-title maple-ellipsis2">{item.title}</h2>
+                <h2 className="daisy-card-title line-clamp-2">{item.title}</h2>
               </div>
             </div>
           </a>
