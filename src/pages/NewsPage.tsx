@@ -1,22 +1,13 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { MainLayout } from "../layouts";
-import { getNews } from "../redux/News/slice";
-import { useSelector, useAppDispatch } from "../redux/hooks";
+import data from "../mockup/news";
 
 export const NewsPage: React.FC = () => {
-  const data = useSelector((s) => s.news.data);
-  const dispatch = useAppDispatch();
-
-  useEffect(() => {
-    dispatch(getNews());
-    console.log(data);
-  }, []);
-
   return (
     <MainLayout>
       <div className="flex flex-wrap gap-y-5 justify-around">
         {data.map((item) => (
-          <a key={item.source.id} href={item.url}>
+          <a key={item.id} href={item.url}>
             <div className="daisy-card w-96 bg-base-100 shadow-xl">
               <div>{item.publishedAt}</div>
               <figure className=" bg-[#3c3c3c]">
