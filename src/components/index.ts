@@ -1,7 +1,5 @@
-export * from "./Ta";
 export * from "./MyDropdown";
 export * from "./Tab";
-export * from "./BlogList";
 export * from "./Loading";
 export * from "./Footer";
 export * from "./Header";
