@@ -6,19 +6,19 @@ interface IAllReactPageItemPropsType {
   title: string;
 }
 
-export const AllReactPage: React.FC = () => {
-  const AllReactPageItem: React.FC<IAllReactPageItemPropsType> = (prop) => {
-    const { address, title } = prop;
-    return (
-      <Link
-        to={address}
-        className=" block py-[2px] px-[16px] my-[20px] mx-[10px] bg-[#fff] border-l-[8px] border-[#fff] hover:border-[#4979ff]"
-      >
-        <h4 className=" text-[18px] font-bold my-4">{title}</h4>
-      </Link>
-    );
-  };
+const AllReactPageItem: React.FC<IAllReactPageItemPropsType> = (prop) => {
+  const { address, title } = prop;
+  return (
+    <Link
+      to={address}
+      className="block py-[2px] px-[16px] my-[20px] bg-[#fff] border-l-[8px] border-[#fff] hover:border-[#4979ff]"
+    >
+      <h4 className="text-[18px] font-bold my-4">{title}</h4>
+    </Link>
+  );
+};
 
+export const AllReactPage: React.FC = () => {
   return (
     <>
       <MainLayout>

@@ -21,7 +21,7 @@ export const TaskItem: React.FC = (props) => {
             }`}
             onClick={() => dispatch(todoSlice.actions.completeTodo(item.id))}
           >
-            <div className=" flex-grow my-0 mx-[20px]">{item.message}</div>
+            <div className="flex-grow my-0 mx-[20px]">{item.message}</div>
             <button
               className="bg-[#bebebe] border-none rounded-[3px] py-[5px] px-[10px] min-w-min text-white tracking-wider cursor-pointer hover:bg-[#F5727E]"
               onClick={() => dispatch(todoSlice.actions.deleteTodo(item.id))}

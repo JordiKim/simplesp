@@ -5,8 +5,8 @@ import logo from "../../assets/blog_logo.jpg";
 export const Header: React.FC = () => {
   return (
     <>
-      <header className="mt-0 mb-[80px] mx-auto py-[10px] px-0 flex justify-end items-end border-b-[1px] border-[#ddd]">
-        <div className="w-16 h-16 ml-1">
+      <header className="mt-0 mb-[80px] py-[10px] px-2 flex items-end border-b-[1px] border-[#ddd]">
+        <div className="w-16 h-16">
           <Link to={"/"}>
             <img src={logo} alt="" />
           </Link>
