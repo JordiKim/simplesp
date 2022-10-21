@@ -1,5 +1,4 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { randomUUID } from "crypto";
+import { createSlice } from "@reduxjs/toolkit";
 import { v4 as uuid } from "uuid";
 
 interface Todo {
