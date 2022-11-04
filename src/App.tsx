@@ -1,5 +1,5 @@
 import React from "react";
-import { HomePage, SignInPage, TodolistPage, AllReactPage, NewsPage, AirplanePage, BoatPage } from "./pages";
+import { HomePage, SignInPage, TodolistPage, AllReactPage, NewsPage, AirplanePage, BoatPage, BiPage } from "./pages";
 import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 
 const NotFound: React.FC = () => {
@@ -22,6 +22,7 @@ function App() {
           <Route path="/boat" element={<BoatPage />} />
           <Route path="/todolist" element={<TodolistPage />} />
           <Route path="/news" element={<NewsPage />} />
+          <Route path="/bi" element={<BiPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

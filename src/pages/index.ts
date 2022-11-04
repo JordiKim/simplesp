@@ -5,3 +5,4 @@ export * from "./AllReactPage";
 export * from "./NewsPage";
 export * from "./BoatPage";
 export * from "./AirplanePage";
+export * from "./BiPage";

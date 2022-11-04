@@ -1,8 +1,10 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { todoSlice } from "./Todolist/slice";
+import { BiSlice } from "./Bi/slice";
 
 const rootReducer = combineReducers({
   todo: todoSlice.reducer,
+  bi: BiSlice.reducer,
 });
 
 const store = configureStore({
