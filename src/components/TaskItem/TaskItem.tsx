@@ -1,30 +1,28 @@
-import React, { useEffect } from "react";
-import { useSelector, useAppDispatch } from "../../redux/hooks";
-import { todoSlice } from "../../redux/Todolist/slice";
+import React from "react";
+import { Todo } from "../../redux/Todolist/slice";
 
-export const TaskItem: React.FC = (props) => {
-  const dispatch = useAppDispatch();
-  const todo = useSelector((s) => s.todo);
+interface PropsType {
+  data: Todo[];
+  complate: (id: string) => void;
+  del: (id: string) => void;
+}
 
-  if (todo.length === 0) {
-    return <h2 className="text-center my-3 text-red-500 text-[28px]">LIST IS EMPTY</h2>;
-  }
-
+export const TaskItem: React.FC<PropsType> = ({ data, complate, del }) => {
   return (
     <>
-      {todo.map((item) => {
+      {data.map((item) => {
         return (
           <div
             key={item.id}
             className={`bg-white w-[80%] h-[60px] flex justify-between items-center tracking-wider py-0 px-[20px] border-2 my-2 ${
               item.completed && "border-red-500 text-primary"
             }`}
-            onClick={() => dispatch(todoSlice.actions.completeTodo(item.id))}
+            onClick={() => complate(item.id)}
           >
-            <div className="flex-grow my-0 mx-[20px]">{item.message}</div>
+            <div className="flex-grow my-0 mx-[20px]">{item.message}2114</div>
             <button
               className="bg-[#bebebe] border-none rounded-[3px] py-[5px] px-[10px] min-w-min text-white tracking-wider cursor-pointer hover:bg-[#F5727E]"
-              onClick={() => dispatch(todoSlice.actions.deleteTodo(item.id))}
+              onClick={() => del(item.id)}
             >
               Delete
             </button>

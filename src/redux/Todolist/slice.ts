@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { v4 as uuid } from "uuid";
 
-interface Todo {
+export interface Todo {
   id: string;
   message: string;
   completed: boolean;
